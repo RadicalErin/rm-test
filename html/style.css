@@ -11,7 +11,8 @@ body {
     width: 70%;
     margin: 0 auto;
     overflow: hidden;
-    font-family: arial;
+    font-family: Lucida Sans Unicode;
+    color: #919191;
 }
 .header {
     width: 100%;
@@ -43,4 +44,20 @@ body {
 }
 .content {
     margin: 20px 5px 0 5px;
+}
+/*Based off of W3C site, for efficiency*/
+.loading {
+    border-top: 2px solid rgba(17, 53, 135, .85);
+    border-left: 2px solid rgba(17, 53, 135, .70);
+    border-bottom: 2px solid rgba(17, 53, 135, .63);
+    border-right: 0px solid rgba(17, 53, 135, .56);
+    border-radius: 50%;
+    width: 164px;
+    height: 164px;
+    animation: spin 1s linear infinite;
+    margin: 200px auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
